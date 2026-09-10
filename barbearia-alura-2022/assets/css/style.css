@@ -1,0 +1,281 @@
+/* CSS do cabeçalho de todas as páginas */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	/* margin: top right bottom left */
+	padding: 0;
+	/* padding: top right bottom left */
+}
+
+/* header da pagina */
+header {
+	background: #8f8f8f;
+	padding: 20px 0px;
+}
+
+.menu {
+	width: 940px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+header .menu img {
+	width: 100px;
+}
+
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/* CSS da página inicial */
+/* banner da pagina */
+
+.banner {
+	margin: 0 auto;
+}
+
+.banner-imagem {
+	width: 100%;
+	border-radius: 2px;
+	/* filter: blur(2px);
+	filter: brightness(.7); */
+	/* mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); */
+	/* filter: brightness(0.9) blur(2px); */
+	/* Corrigi a ordem e combinei os filtros */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	/* Adicionei um gradiente para dar mais contraste */
+}
+
+/* sobre da pagina */
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0 1em;
+	clear: left;
+
+}
+
+.principal {
+	padding: 1em 0 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.area-principal {
+	display: flex;
+	flex-direction: row;
+}
+
+.utensilios {
+	width: 150px;
+	margin: 0 20px 20px 0;
+	border-radius: 2px;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+/* area de mapa do site */
+
+.mapa {
+	padding: 3em 0 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	max-width: 940px;
+	margin: 0 auto;
+	border-radius: 2px;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+/* area beneficios do site */
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	max-width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.lista-beneficios {
+	width: 50% !important;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:not(:first-child):before {
+	content: "✔";
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagem-beneficios {
+	width: 50%;
+	opacity: 1;
+	transition: 400ms;
+	border-radius: 2px;
+	box-shadow: 10px 10px 30px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+/* sessao video */
+
+.video {
+	max-width: 940px;
+	margin: 2em auto;
+}
+
+.video-area {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+iframe {
+	min-height: 450px;
+
+}
+
+/* CSS do rodapé de todas as páginas */
+
+footer {
+	text-align: center;
+	background: url("../img/Curso_08_-_Bg.jpg");
+	padding: 40px;
+	position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer img {
+	width: 150px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+/* resposividade do site */
+@media screen and (max-width: 1024px) {
+	header .menu {
+		width: 80%;
+		flex-direction: column;
+	}
+
+	.principal {
+		width: 90%;
+	}
+
+	.conteudo-beneficios img,
+	.lista-beneficios {
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	.conteudo-beneficios {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	header .menu {
+		width: 80%;
+		flex-direction: column;
+	}
+
+	nav a {
+		font-size: 18px;
+	}
+
+	.principal {
+		width: 80%;
+	}
+
+	.titulo-principal {
+		text-align: center;
+		margin: 1em auto;
+	}
+
+	.utensilios {
+		width: 100px;
+		height: 100px;
+	}
+
+	.mapa p {
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.conteudo-beneficios img,
+	.lista-beneficios {
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	.conteudo-beneficios {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.produtos li,
+	.produtos-imagem {
+		display: block;
+		width: 75%;
+		margin: 2em auto;
+	}
+}
+
+
+

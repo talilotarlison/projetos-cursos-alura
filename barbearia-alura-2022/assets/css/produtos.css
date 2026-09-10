@@ -1,0 +1,56 @@
+
+/* CSS da página de produtos */
+
+ul.produtos {
+	max-width: 940px;
+	margin: 0px auto;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.produtos li {
+	text-align: center;
+	width: 250px;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	height: 391px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li img {
+	width: 150px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:hover h2 {
+	/*font-size: 34px;*/
+	transform: scale(1.1);
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos h2 {
+	font-weight: bold;
+	font-size:18px;
+}
+
+.produtos-descricao {
+	font-size: 18px;
+}
+
+.produtos-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}

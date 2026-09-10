@@ -1,0 +1,23 @@
+Experimentar o recurso "Inserir Função";
+Utilizar as funções de pesquisa e referência, PROCV(), PROCX() e PROCH() do Excel;
+Utilizar a função de lógica SEERRO() do Excel;
+Utilizar a função DIA.DA.SEMANA() do Excel;
+Comparar as as funções de pesquisa e referência, PROCV(), PROCX() e PROCH() do Excel;
+Produzir cálculos em diferentes planilhas;
+Produzir funções aninhadas no Excel ou seja, uma ou mais funções dentro dos argumentos de outra função no Excel.
+
+Nessa aula, você aprendeu como:
+Comparar às funções funções de lógica SE() e SES() do Excel;
+Produzir as funções de lógica SE() e SES() do Excel.
+
+Nessa aula, você aprendeu como:
+Identificar uma procura bi-dimensional no Excel;
+Produzir a função CORRESP() do Excel;
+Produzir a função ÍNDICE() do Excel;
+Implementar nomes nos intervalos do Excel;
+Elaborar uma função aninhada, utilizando as funções ÍNDICE(), CORRESP() e PROCX() do Excel.
+
+Nessa aula, você aprendeu como:
+Produzir a função CORRESPX() do Excel;
+Revisar a função PROCX;
+Relembrar a Função SE.
